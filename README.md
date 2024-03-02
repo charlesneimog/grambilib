@@ -16,3 +16,14 @@ This object supports 3d b-format manipulations, including *rotate*, *tilt*, *tum
 
 ### `[grambidec~]`
 A simple ambisonic decoder based on **FuMa** coefficients, including, *mono*, *stereo*, *quad*, *pent*, *hex*, *oct*, *hexadecagonal* and b-format *cube*.
+
+# Compile
+
+Use 
+```
+git clone https://github.com/charlesneimog/grambilib --recursive
+cmake . -B build
+cmake --build build
+```
+
+On Windows, you must use `mingw64`.
