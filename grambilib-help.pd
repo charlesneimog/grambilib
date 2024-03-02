@@ -1,6 +1,6 @@
-#N canvas 23 23 967 508 10;
-#X floatatom 482 276 5 0 1 0 - - -, f 5;
-#X floatatom 532 274 5 0 1 0 - - -, f 5;
+#N canvas 12 563 941 473 10;
+#X floatatom 482 276 5 0 1 0 - - - 0;
+#X floatatom 532 274 5 0 1 0 - - - 0;
 #X msg 482 301 az \$1;
 #X msg 532 299 el \$1;
 #X text 581 294 az and el: 0 to 1;
@@ -13,32 +13,24 @@
 #X obj 429 276 noise~;
 #X obj 425 224 dac~ 1 2 3 4;
 #X obj 429 444 dac~ 1 2 3 4 5 6 7 8;
-#X text 33 39 grambilib~ v1 (2016) for Pd written by Ricky Graham <ricky@rickygraham.net>
-;
+#X text 33 39 grambilib~ v1 (2016) for Pd written by Ricky Graham <ricky@rickygraham.net>;
 #X obj 487 353 phasor~ 1;
 #X obj 562 353 phasor~ 1;
 #X obj 429 386 grambipan~ 1 *******;
 #X obj 429 307 *~ 0;
-#X text 530 195 mono \, stereo \, quad \, pent \, hex \, oct \, cube
-;
+#X text 530 195 mono \, stereo \, quad \, pent \, hex \, oct \, cube;
 #X text 531 165 order: 1 \, 2 \, 3;
-#N canvas 452 94 454 379 meta 1;
+#N canvas 12 44 941 473 meta 1;
 #X text 48 235 1st order: WXYZ;
 #X text 47 273 3rd order: WXYUVPQ (horizontal / 2d only);
 #X text 47 254 2nd order: WXYUV (horizontal/ 2d only);
-#X text 46 102 Tumble: anticlockwise movement in vertical front-back
-plane (about y);
-#X text 46 67 Tilt: anticlockwise movement in vertical left-right plane
-(about x);
-#X text 48 171 x' = x * cos A - y * sin A \; w' = w \; y' = x * sin
-A * cos B + y * cos A * cos B - z * sin B \; z' = x * sin A * sin B
-+ y * cos A * sin B + z * cos B;
+#X text 46 102 Tumble: anticlockwise movement in vertical front-back plane (about y);
+#X text 46 67 Tilt: anticlockwise movement in vertical left-right plane (about x);
+#X text 48 171 x' = x * cos A - y * sin A \; w' = w \; y' = x * sin A * cos B + y * cos A * cos B - z * sin B \; z' = x * sin A * sin B + y * cos A * sin B + z * cos B;
 #X text 47 150 Rotilt: rotation and tilt combined:;
-#X text 48 301 http://www.york.ac.uk/inst/mustech/3d_audio/ambis2.htm
-;
+#X text 48 301 http://www.york.ac.uk/inst/mustech/3d_audio/ambis2.htm;
 #X text 47 319 http://www.blueripplesound.com/HOA;
-#X text 47 34 Rotate: anticlockwise rotation to left in horizontal
-plane (about z);
+#X text 47 34 Rotate: anticlockwise rotation to left in horizontal plane (about z);
 #X restore 676 438 pd meta;
 #X obj 57 337 noise~;
 #X obj 100 363 phasor~ 0.1;
@@ -53,7 +45,7 @@ plane (about z);
 #X obj 169 112 *~ 0.35;
 #X msg 260 125 az 0.65;
 #X msg 115 123 az 0.3;
-#X floatatom 231 181 5 0 0 0 - - -, f 5;
+#X floatatom 231 181 5 0 0 0 - - - 0;
 #X obj 29 140 grambipan~ 1;
 #X obj 169 142 grambipan~ 1;
 #X obj 57 292 dac~ 1 2;
